@@ -178,6 +178,40 @@ canvas = function() {
     } //close list.onclick
   } //close check function
 
+  //Play the Game
+  play = function() {
+    categories =
+    //first category is NFL teams
+    ['bengals', 'texans', 'dolphins', 'raiders', 'vikings', 'falcons', 'cowboys', 'cardinals', 'Panthers', 'broncos'], //hint will be division
+
+    //second category is state Capitals
+    ['salt lake city', 'denver', 'boise', 'phoenix', 'santa fe', 'cheyenne', 'olympia', 'austin', 'madison', 'frankfort'],  //hint will be state bird
+
+    // third category is chemical elements
+    ['lithium', 'sodium', 'potassium', 'magnesium', 'calcium', 'carbon', 'nitrogen', 'oxygen', 'helium', 'uranium'];  //hint will be symbol
+
+    givenCategory = categories[Math.floor(Math.random * ategories.length)]; //random category
+
+    word = givenCategory[Math.floor(Math.random * givenCategory.length)]; //random word
+
+    word = word.replace (/\s/g, "-"); //replace spaces with a dash
+
+    console.log(word);
+
+    buttons();
+
+    guesses = [ ];
+    lives = 10;
+    counter = 0;
+    space = 0;
+    result();
+    comments();
+    selectCat();
+    canvas();
+  } //closes play function
+
+  
+
 
 
 
