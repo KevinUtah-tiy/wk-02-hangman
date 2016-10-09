@@ -151,6 +151,33 @@ canvas = function() {
 
   drawArray = [rightLeg, leftLeg, rightArm, leftArm, torso, head, frame4, frame3, frame2, frame1];
 
+  //Create OnClick function
+  check = function() {
+    list.onclick = function() {
+      var guess = (this.innerHTML);
+      this.setAttribute("class", "active");
+      this.onclick = null;
+      for (var i = 0; i < word.length; i++) {
+        if(word[i] === guess) {
+          guesses[i].innerHTML = guess;
+          counter += 1;
+        } //closes if statement
+      } //closes for loop
+
+      var j = (word.indexOf(guess));
+      if (j === -1) {
+        lives -= 1;
+        comments();
+        animate();
+      }
+      else {
+        {
+          comments();
+        } //close comments
+      } //close else
+    } //close list.onclick
+  } //close check function
+
 
 
 
