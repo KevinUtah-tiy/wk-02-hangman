@@ -6,15 +6,23 @@ window.onLoad = function();
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 //Define variables
-var categories;
-var givenCategory;
-var getHint;
-var word;
-var guess;
-var guesses = [];
-var lives;
-var counter;
-var space;
+var categories;       //an arry of topics
+var givenCategory;  //randomly chosen category
+var getHint;   //word hint if requested
+var word;   //randomly chosen word
+var guess;  //guess
+var guesses = []; //an empty array to store the guess
+var lives; //lives, starts with 10
+var counter; //counts the correct guesses
+var space; //number of spaces in a word,  '-'
+
+//Get the Elements...document.getElementById
+var showLives = document.getElementById("myLives");
+var showCategory = document.getElementById("scategory");
+var getHint = document.getElementById("hint");
+var showClue = document.getElementById("clue");
+
+
 
 
 
