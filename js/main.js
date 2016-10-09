@@ -6,24 +6,24 @@ window.onLoad = function();
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 //Define variables
-var categories;       //an arry of topics
-var givenCategory;  //randomly chosen category
-var getHint;   //word hint if requested
-var word;   //randomly chosen word
-var guess;  //guess
-var guesses = []; //an empty array to store the guess
-var lives; //lives, starts with 10
-var counter; //counts the correct guesses
-var space; //number of spaces in a word,  '-'
+var categories;       //an array of topics
+var givenCategory;    //randomly chosen category
+var getHint;          //word hint if requested
+var word;             //randomly chosen word
+var guess;            //guess
+var guesses = [];     //an empty array to store the guess
+var lives;            //lives, starts with 10
+var counter;          //counts the correct guesses
+var space;            //number of spaces in a word,  '-'
 
 //Get the Elements...document.getElementById
 var showLives = document.getElementById("myLives");
-var showCategory = document.getElementById("scategory");
+var showCategory = document.getElementById("category");
 var getHint = document.getElementById("hint");
 var showClue = document.getElementById("clue");
 
 //Create alphabet with an unordered list and buttons
-var buttons = document.getElementById() {
+var buttons = function() {
   myButtons = document.getElementById('buttons');
   letters = document.createElement('ul');
   for (var i = 0; i < alphabet.length; i++) {
@@ -38,7 +38,7 @@ var buttons = document.getElementById() {
 }
 
 //Have the category randomly chosen by browser
-var givenCat = function() {
+var givenCategory = function() {
   if(givenCategory === categories[0])  {
     categoryName.innerHTML = "The Category is NFL Team Names";
   } else if(givenCategory) === categories[1] {
@@ -180,7 +180,7 @@ canvas = function() {
 
   //Play the Game
   play = function() {
-    categories =
+    categories = [
     //first category is NFL teams
     ['bengals', 'texans', 'dolphins', 'raiders', 'vikings', 'falcons', 'cowboys', 'cardinals', 'Panthers', 'broncos'], //hint will be division
 
@@ -188,7 +188,8 @@ canvas = function() {
     ['salt lake city', 'denver', 'boise', 'phoenix', 'santa fe', 'cheyenne', 'olympia', 'austin', 'madison', 'frankfort'],  //hint will be state bird
 
     // third category is chemical elements
-    ['lithium', 'sodium', 'potassium', 'magnesium', 'calcium', 'carbon', 'nitrogen', 'oxygen', 'helium', 'uranium'];  //hint will be symbol
+    ['lithium', 'sodium', 'potassium', 'magnesium', 'calcium', 'carbon', 'nitrogen', 'oxygen', 'helium', 'uranium']  //hint will be symbol
+    ]
 
     givenCategory = categories[Math.floor(Math.random * ategories.length)]; //random category
 
@@ -212,7 +213,7 @@ canvas = function() {
 
   //give a hint
   hint.onclick = function () {
-  hints =
+  hints = [
   //for first categories [0]
   ['AFC North', 'AFC South', 'AFC East', 'AFC West', 'NFC North', 'NFC South', 'NFC East', 'NFC West', 'lost Super Bowl 50', 'won Super Bowl 50'],
 
@@ -220,7 +221,8 @@ canvas = function() {
   ['Common American Gull', 'Lark Bunting', 'Mountain Bluebird', 'Cactus Wren', 'Roadrunner', 'Western Meadowlark', 'Willow Goldfinch', 'Mockingbird', 'Robin', 'Cardinal'],
 
   //for third category [2]
-  ['Li', 'Na', 'K', 'Mg', 'Ca', 'C', 'N', 'O', 'He', 'U'];
+  ['Li', 'Na', 'K', 'Mg', 'Ca', 'C', 'N', 'O', 'He', 'U']
+  ]
 
   var categoryIndex = categories.indexOf(givenCategory);
   var hintIndex = givencategory.indexOf(word);
@@ -228,7 +230,15 @@ canvas = function() {
 
 } //closes hint.onclick function
 
-
+//Reset
+document.getElementById('reset').onclick = function() {
+  correct.parentNode.removeChild(correct);
+  letters.parentNode.removeChild(letters);
+  showClue.innerHTML = "";
+  context.clearRect(0, 0, 400, 400);
+  play();
+}
+}
 
 
 
@@ -247,3 +257,4 @@ canvas = function() {
 // function commonWords() { commonWords[Math.floor(Math.random()*commonWords.length)]
 // return true;
 // }
+window.onload = console.log(“It works!”);
