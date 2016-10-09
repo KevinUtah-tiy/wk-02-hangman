@@ -84,7 +84,50 @@ comments = function() {
   }  //closes for loop
 } //closes comments function
 
+//Animate the stick figure
+var animate = function () {
+  var drawMe = lives;
+  drawArray[drawMe]();
+} //closes the animate function call
 
+//Make the hangman
+canvas = function() {
+  myStickMan = document.getElementById("stickman");
+  context = myStickman.getContext('2d');
+  context.beginPath();
+  context.strokeStyle = "#fff";
+  context.lineWidth = 2;
+}; //closes canvas function
+
+  head = function() {
+    myStickman = document.getElementById("Stickman");
+    context = myStickman.getContext('2d');
+    context.beginPath();
+    context.arc(60, 25, 10, 0, Math.PI * 2, true);
+    context.stroke();
+  } //closes the function for drawing the head
+
+  draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
+    context.moveTo($pathFromx, $pathFromy);
+    context.lineTo($pathTox, $pathToy);
+    context.stroke();
+  } //closes the draw function
+
+  frame1 = function() {
+    draw (0, 150, 150, 150);
+  };
+
+  frame2 = function() {
+    draw (10, 0, 10, 600);
+  };
+
+  frame3 = function() {
+    draw (0, 5, 70, 5);
+  };
+
+  frame4 = function() {
+    draw (60, 5, 60, 15);
+  };
 
 
 
