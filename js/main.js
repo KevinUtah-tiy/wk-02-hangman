@@ -210,7 +210,24 @@ canvas = function() {
     canvas();
   } //closes play function
 
-  
+  //give a hint
+  hint.onclick = function () {
+  hints =
+  //for first categories [0]
+  ['AFC North', 'AFC South', 'AFC East', 'AFC West', 'NFC North', 'NFC South', 'NFC East', 'NFC West', 'lost Super Bowl 50', 'won Super Bowl 50'],
+
+  //for second category [1]
+  ['Common American Gull', 'Lark Bunting', 'Mountain Bluebird', 'Cactus Wren', 'Roadrunner', 'Western Meadowlark', 'Willow Goldfinch', 'Mockingbird', 'Robin', 'Cardinal'],
+
+  //for third category [2]
+  ['Li', 'Na', 'K', 'Mg', 'Ca', 'C', 'N', 'O', 'He', 'U'];
+
+  var categoryIndex = categories.indexOf(givenCategory);
+  var hintIndex = givencategory.indexOf(word);
+  showClue.innerHTML = "Clue " + hint + [categoryIndex][hintIndex]
+
+} //closes hint.onclick function
+
 
 
 
