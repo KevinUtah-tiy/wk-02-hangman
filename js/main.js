@@ -70,6 +70,20 @@ result = function () {
   }//closes the for loop
 }//closes the result function
 
+//Function to show remaining lives
+comments = function() {
+  showLives.innerHTML = "You have " + lives + " lives";
+  if (lives < i) {
+    showLives.innerHTML = "Game Over";
+  } //closes if statement for game over
+
+  for (var i = 0; i < guess.length; i++) {
+    if (counter + space === guesses.length) {
+      showLives.innerHTM = "You're a Winner!!!";
+    } //closes if statement for winning
+  }  //closes for loop
+} //closes comments function
+
 
 
 
