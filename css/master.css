@@ -1,4 +1,33 @@
 * {
   margin: 0;
   padding: 0;
+  background-image: url("images/background-sand.jpg");
+  /*background-color: transparent;*/
 }
+
+/* ---------  header ------------*/
+body {
+  background-image: url("images/background.jpeg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  opacity: 10%;
+  background-color: #ffffff;
+  color: #2a1c29;
+  font-family: Gill Sans, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+
+}
+
+.container img {
+  opacity: 10%;
+}
+
+.header {
+
+}
+
+
+/* ---------  body  ----------*/
