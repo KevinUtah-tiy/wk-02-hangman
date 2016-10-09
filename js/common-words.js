@@ -22,6 +22,20 @@ var showCategory = document.getElementById("scategory");
 var getHint = document.getElementById("hint");
 var showClue = document.getElementById("clue");
 
+//Create alphabet with an unordered list and buttons
+var buttons = document.getElementById() {
+  myButtons = document.getElementById('buttons');
+  letters = document.createElement('ul');
+  for (var i = 0; i < alphabet.length; i++) {
+    letters.id = 'alphabet';
+    list = document.createElement('li');
+    list.id = 'letter';
+    list.innerHTML = alphabet[i];
+    check();
+    myButtons.appendChild(letters);
+    letters.appendChild(list);
+  }
+}
 
 
 
