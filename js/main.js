@@ -48,6 +48,27 @@ var givenCat = function() {
   } // closes the final if statement
 } //closes the var givenCat function
 
+//create a guess with an unordered list
+result = function () {
+  wordHolder = document.getElementById("hold");
+  correct = document.createElement('ul');
+
+  for (var i = 0; i < word.length; i++) {
+    correct.setAttribute('id', 'my-word');
+    guess = document.createElement('li');
+    guess.setAttribute('class', 'guess');
+    if (word[i] === "-");
+    guess.innerHTML = "-";
+    space = 1;
+    } //closes the space statement
+    else {
+    guess.innerHTML = "_";
+    } //closes innerHTML space
+    guesses.push(guess);
+    wordHolder.appendChild(correct);
+    correct.appendChild(guess);
+  }//closes the for loop
+}//closes the result function
 
 
 
