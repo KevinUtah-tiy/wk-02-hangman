@@ -7,15 +7,28 @@
 
 /* ---------  header ------------*/
 
+.container {
+  border: 5px dotted red;
+  margin: 5px dashed green;
+  padding: 5px solid blue;
+}
+
+.header {
+  border: 5px dotted red;
+  margin: 5px dashed green;
+  padding: 5px solid blue;
+}
+
+
 
 body {
-  background-image: url("images/background.jpeg");
+  background-image: url("images/background-sand.jpeg");
   background-repeat: repeat-x;
   background-position: center;
   background-clip: border-box;
-  background-size: cover;
+  /*background-size: cover;*/
   opacity: 10%;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #2a1c29;
   font-family: Gill Sans, Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -23,41 +36,17 @@ body {
 
 }
 
-.container img {
-  opacity: 10%;
-}
-
-.header {
-
-}
+/*main*/
 
 
-/* ---------  body  ----------*/
-
-.flex-container {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: stretch;
-    background-color: skyblue;
-  border-radius: 15px;
-}
 
 
-.flex-items-default {
-    width: 300px;
-    height: 250px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 0;
-}
 
- .flex-item-1 {
-    width: 900px;
-    height: 250px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
+
+/*footer*/
+footer {
+  border: 5px dotted red;
+  margin: 5px dashed green;
+  padding: 5px solid blue;
+  text-align: center;
 }
