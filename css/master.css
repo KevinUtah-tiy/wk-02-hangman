@@ -57,16 +57,7 @@ body {
 
 
 /*footer*/
-.footer .name{
-  display: flex;
-  background-color: pink;
-  border: 5px dotted red;
-  margin: 5px dashed green;
-  padding: 5px solid blue;
-  text-align: center;
-  max-width: 100%;
-  position: relative;
-}
+
 
 .footer .bio {
   display: flex;
@@ -74,11 +65,11 @@ body {
   border: 5px dotted red;
   margin: 5px dashed green;
   padding: 5px solid blue;
-  text-align: center;
   max-width: 100%;
-  list-style-type: none;
 }
 
-ul {
+li {
   text-align: center;
+  list-style-type: none;
+  text-align: center;;
 }
