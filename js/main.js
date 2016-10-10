@@ -43,10 +43,10 @@ var buttons = function() {
 var givenCategory = function() {
   if(givenCategory === categories[0])  {
     categoryName.innerHTML = "The Category is NFL Team Names";
-  } else if(givenCategory) === categories[1] {
+  } else if(givenCategory === categories[1]) {
     categoryName.innerHTML = "The Category is State Capitals";
   } else if(givenCategory === categories[2]) {
-    "The Category is Chemical Elements"
+    categoryName.innerHTML = "The Category is Chemical Elements";
   } // closes the final if statement
 } //closes the var givenCat function
 
@@ -63,9 +63,9 @@ result = function () {
     guess.innerHTML = "-";
     space = 1;
     } //closes the space statement
-    else {
+    otherwise
     guess.innerHTML = "_";
-    } //closes innerHTML space
+     //closes innerHTML space
     guesses.push(guess);
     wordHolder.appendChild(correct);
     correct.appendChild(guess);
@@ -240,7 +240,7 @@ document.getElementById('reset').onclick = function() {
   context.clearRect(0, 0, 400, 400);
   play();
 }
-}
+
 
 
 
@@ -259,4 +259,4 @@ document.getElementById('reset').onclick = function() {
 // function commonWords() { commonWords[Math.floor(Math.random()*commonWords.length)]
 // return true;
 // }
-window.onload = console.log(“It works!”);
+// window.onload = console.log(“It works!”);
