@@ -1,5 +1,7 @@
 "use strict";
 
+// window.onload = console.log(“It works!”);
+
 window.onLoad = function();
 
 //Define alphabet as an array

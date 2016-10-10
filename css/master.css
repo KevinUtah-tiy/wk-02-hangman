@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  /*background-image: url("images/background-sand.jpg");*/
-  /*background-color: transparent;*/
+  border-radius: 20px;
+  background-image: url(images/background-sand.jpg);
 }
 
 /* ---------  header ------------*/
@@ -14,12 +14,21 @@
 }
 
 .header {
+  background-color: royalblue;
   border: 5px dotted red;
   margin: 5px dashed green;
   padding: 5px solid blue;
 }
 
+.header h1 {
+  text-align: center;
+}
 
+
+
+.flex-container {
+  display: flex;
+}
 
 body {
   background-image: url("images/background-sand.jpeg");
@@ -28,7 +37,7 @@ body {
   background-clip: border-box;
   /*background-size: cover;*/
   opacity: 10%;
-  background-color: #fff;
+  background-color: #aaa;
   color: #2a1c29;
   font-family: Gill Sans, Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -47,8 +56,11 @@ body {
 
 /*footer*/
 footer {
+  display: flex;
+  background-color: pink;
   border: 5px dotted red;
   margin: 5px dashed green;
   padding: 5px solid blue;
   text-align: center;
+  /*display: inline-block;*/
 }
