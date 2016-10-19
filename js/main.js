@@ -1,4 +1,4 @@
-
+"use strict";
 
 // prompt ("Kevin");
-// console.log(document.title);
+console.log("freeze");
