@@ -1,9 +1,5 @@
 "use strict";
 
-// window.onload = console.log(“It works!”);
-
-
-
 var myGlobalVar= {};
 
 //Define variables
@@ -34,7 +30,6 @@ var buttons = function() {
     letters.appendChild(list);
   }
 }
-
 
 //create a guess with an unordered list
 result = function () {
@@ -120,8 +115,6 @@ comments = function() {
     canvas();
   } //closes play function
 
-
-
   var categoryIndex = categories.indexOf(givenCategory);
   var hintIndex = givencategory.indexOf(word);
   showClue.innerHTML = "Clue " + hint + [categoryIndex][hintIndex]
@@ -136,8 +129,6 @@ document.getElementById('reset').onclick = function() {
   context.clearRect(0, 0, 400, 400);
   play();
 }
-
-
 
 window.onLoad = function() {
 
