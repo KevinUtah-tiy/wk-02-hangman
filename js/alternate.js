@@ -2,10 +2,8 @@
 
 // window.onload = console.log(“It works!”);
 
-window.onLoad = function() {
 
-//Define alphabet as an array
-// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
 var myGlobalVar= {};
 
 //Define variables
@@ -104,20 +102,7 @@ comments = function() {
 
   //Play the Game
   // play = function() {
-  //   categories = [
-  //   //first category is NFL teams
-  //   ['bengals', 'texans', 'dolphins', 'raiders', 'vikings', 'falcons', 'cowboys', 'cardinals', 'Panthers', 'broncos'], //hint will be division
-  //
-  //   //second category is state Capitals
-  //   ['salt lake city', 'denver', 'boise', 'phoenix', 'santa fe', 'cheyenne', 'olympia', 'austin', 'madison', 'frankfort'],  //hint will be state bird
-  //
-  //   // third category is chemical elements
-  //   ['lithium', 'sodium', 'potassium', 'magnesium', 'calcium', 'carbon', 'nitrogen', 'oxygen', 'helium', 'uranium']  //hint will be symbol
-  //   ]
 
-    // givenCategory = categories[Math.floor(Math.random * ategories.length)]; //random category
-    //
-    // word = givenCategory[Math.floor(Math.random * givenCategory.length)]; //random word
 
     word = word.replace (/\s/g, "-"); //replace spaces with a dash
 
@@ -135,18 +120,7 @@ comments = function() {
     canvas();
   } //closes play function
 
-  //give a hint
-  // hint.onclick = function () {
-  // hints = [
-  // //for first categories [0]
-  // ['AFC North', 'AFC South', 'AFC East', 'AFC West', 'NFC North', 'NFC South', 'NFC East', 'NFC West', 'lost Super Bowl 50', 'won Super Bowl 50'],
-  //
-  // //for second category [1]
-  // ['Common American Gull', 'Lark Bunting', 'Mountain Bluebird', 'Cactus Wren', 'Roadrunner', 'Western Meadowlark', 'Willow Goldfinch', 'Mockingbird', 'Robin', 'Cardinal'],
-  //
-  // //for third category [2]
-  // ['Li', 'Na', 'K', 'Mg', 'Ca', 'C', 'N', 'O', 'He', 'U']
-  // ]
+
 
   var categoryIndex = categories.indexOf(givenCategory);
   var hintIndex = givencategory.indexOf(word);
@@ -165,5 +139,6 @@ document.getElementById('reset').onclick = function() {
 
 
 
+window.onLoad = function() {
 
 /* -------------- end here ------------- */
