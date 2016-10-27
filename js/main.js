@@ -1,11 +1,12 @@
 "use strict";
 
 // alert ("You are about to begin the game of Hangman.\n\nYou will have 8 incorrect chances.\n\nGuessing the correct letter will not subtract from your number of guesses.\n\nClick 'OK' to begin the game.\n\nGood luck.");
-console.log("attack and freeze");
-//using 'attack' to answer and 't' to guess
+
+
 
 let answer = "attack";
 let status = createStatus(answer);
+
 
 function createStatus(answer_string) {
   let status_array = [];
@@ -30,8 +31,8 @@ function updateStatus (answer_string, status_array, guess_char) {
 function updateMessage (guessFeedbackObj) {
   if (guessFeedbackObj === undefined) {
     return "Let's play Hangman.\nPlease guess a letter.\n" + status.join(" ");
+    return "Let's play hangman.\nYou have " + 8 + " tris.\nPlease guess a letter.\n" + status.join("");
   }
-
   if (guessFeedbackObj.isFound === false) {
     return "That guess was incorrect, please try again.\nYour current status is\n" + guessFeedbackObj.status.join(" ");
   }
@@ -46,7 +47,6 @@ function makeGuess () {
   let guessFeedbackObj;
   for (let i = 0; i < 5; i++) {
     guess = prompt (updateMessage(guessFeedbackObj));
-
 
 
     guessFeedbackObj = updateStatus(answer, status, guess);
@@ -71,3 +71,8 @@ makeGuess();
 // }
 //
 // //make a guess
+
+// var randomWord = commonWords[rand];
+// var rand = Math.floor(Math.random * commonWords.length);
+
+window.onload();

@@ -1,35 +1,19 @@
 "use strict";
 
+(function () {
 var myGlobalVar= {};
 
 //Define variables
-myGlobalVar.word = "attack";     //randomly chosen word
-myGlobalVar.guess = ;            //guess
+word = "attack";     //randomly chosen word
+guess = _guess;       //guess
 var guesses = [];     //an empty array to store the guess
-myGlobalVar.lives = 8;            //lives, starts with 8
+myGlobalVar.lives = 8;           //lives, starts with 8
 var counter;          //counts the correct guesses
-var space;            //number of spaces in a word,  '-'
+// var space;            //number of spaces in a word,  '-'
 
 //Get the Elements...document.getElementById
 var showLives = document.getElementById("myLives");
-var showCategory = document.getElementById("category");
-var getHint = document.getElementById("hint");
-var showClue = document.getElementById("clue");
 
-//Create alphabet with an unordered list and buttons
-var buttons = function() {
-  myButtons = document.getElementById('buttons');
-  letters = document.createElement('ul');
-  for (var i = 0; i < alphabet.length; i++) {
-    letters.id = 'alphabet';
-    list = document.createElement('li');
-    list.id = 'letter';
-    list.innerHTML = alphabet[i];
-    check();
-    myButtons.appendChild(letters);
-    letters.appendChild(list);
-  }
-}
 
 //create a guess with an unordered list
 result = function () {
@@ -45,7 +29,7 @@ result = function () {
     space = 1;
     } //closes the space statement
     otherwise
-    guess.innerHTML = "_";
+    guess.innerHTML = " _ ";
      //closes innerHTML space
     guesses.push(guess);
     wordHolder.appendChild(correct);
@@ -63,9 +47,9 @@ comments = function() {
   for (var i = 0; i < guess.length; i++) {
     if (counter + space === guesses.length) {
       showLives.innerHTM = "You're a Winner!!!";
-    } //closes if statement for winning
-  }  //closes for loop
-} //closes comments function
+    } //closes 'if' statement for winning
+  }  //closes 'for' loop
+} //closes 'comments' function
 
 
   //Create OnClick function
@@ -106,13 +90,10 @@ comments = function() {
     buttons();
 
     guesses = [ ];
-    lives = 10;
-    counter = 0;
+    lives = 8;
     space = 0;
     result();
     comments();
-    selectCat();
-    canvas();
   } //closes play function
 
   var categoryIndex = categories.indexOf(givenCategory);
@@ -122,14 +103,9 @@ comments = function() {
 } //closes hint.onclick function
 
 //Reset
-document.getElementById('reset').onclick = function() {
-  correct.parentNode.removeChild(correct);
-  letters.parentNode.removeChild(letters);
-  showClue.innerHTML = "";
-  context.clearRect(0, 0, 400, 400);
-  play();
-}
+
 
 window.onLoad = function() {
 
+})();
 /* -------------- end here ------------- */
